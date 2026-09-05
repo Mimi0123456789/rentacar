@@ -1,0 +1,14 @@
+{
+  "name": "daypilot-pro-javascript",
+  "version": "2025.3.6645",
+  "description": "DayPilot Pro for JavaScript",
+  "main": "daypilot-javascript.min.js",
+  "typings": "daypilot-javascript.min.d.ts",
+  "private": true,
+  "files": [
+    "daypilot-javascript.min.js"
+  ],
+  "dependencies": {},
+  "author": "Annpoint, s.r.o.",
+  "license": "SEE LICENSE IN LicenseAgreement.pdf"
+}

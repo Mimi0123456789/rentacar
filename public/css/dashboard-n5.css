@@ -1,0 +1,28 @@
+/* =========================================
+   KPI
+   ========================================= */
+
+.kpi-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px 22px;
+    box-shadow: var(--shadow-soft);
+    animation: fadeUp 0.5s ease both;
+}
+
+.kpi-progress-bar {
+    height: 4px;
+    border-radius: 4px;
+    transition: width 1s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

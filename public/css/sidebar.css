@@ -1,0 +1,79 @@
+/* =========================================
+   SIDEBAR
+   ========================================= */
+
+#sidebar-wrapper {
+    position: fixed;
+    width: 50px;
+    top:50px;
+    height: calc(100vh - 60px);
+    background-color: #C4C4C4;
+    border-right: 1px solid var(--border-color);
+    transition: width 0.25s ease;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+
+/* Expansion au hover */
+#sidebar-wrapper:hover {
+    width: 240px;
+}
+
+/* Liste */
+.sidebar-nav {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* Item */
+.sidebar-nav li {
+    margin: 4px 0;
+}
+
+/* Lien */
+.sidebar-nav li a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    color: var(--text-primary);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Icône */
+.sidebar-icon {
+    font-size: 20px;
+    min-width: 24px;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* Texte caché par défaut */
+.sidebar-nav li a span {
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+/* Texte visible au hover */
+#sidebar-wrapper:hover .sidebar-nav li a span {
+    opacity: 1;
+}
+
+/* Hover élégant */
+.sidebar-nav li a:hover {
+    background-color: grey;
+    color: var(--text-primary);
+}
+
+/* Icône hover */
+.sidebar-nav li a:hover .sidebar-icon {
+    color: var(--text-primary);
+}
+
+/* DARK MODE */
+[data-theme="dark"] .sidebar-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
